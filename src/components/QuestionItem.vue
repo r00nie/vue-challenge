@@ -1,6 +1,5 @@
 <template>
     <div>
-        <p>{{answers}}</p>
         <h1 class="title">Quiz App</h1>
         <div class="question-item">
             <p class="question-counter">{{store.getters.getQuestionNumber+1}} / 10</p>
