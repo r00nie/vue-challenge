@@ -33,7 +33,7 @@ export default createStore<QuestionsInterface>({
       console.log(questions)
       state.questions = questions;
     },
-    SET_QUESTION_NUMBER(state, number: number){
+    SET_QUESTION(state, number: number){
       if(state.questionNumber + number == 10 || state.questionNumber + number == -1){
         if(state.answer){
           state.answers[state.questionNumber] = state.answer;
@@ -64,10 +64,10 @@ export default createStore<QuestionsInterface>({
       }
     },
     increaseQuestionNumber({commit}){
-      commit('SET_QUESTION_NUMBER', 1);
+      commit('SET_QUESTION', 1);
     },
     decreaseQuestionNumber({commit}){
-      commit('SET_QUESTION_NUMBER', -1);
+      commit('SET_QUESTION', -1);
     },
     setAnswer({commit}, answer){
       commit('SET_ANSWER', answer);

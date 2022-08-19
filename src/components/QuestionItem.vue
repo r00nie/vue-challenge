@@ -22,23 +22,9 @@ import {useStore} from 'vuex';
 
 const store = useStore();
 
-
-// const getQuestions = computed(() => {
-//     return store.getters.getQuestions;
-// });
-
-// const question = computed(() => {
-//     return store.state.questionNumber;
-// });
-
 const questions = computed(() => {
     return store.state.questions;
 });
-
-const answers = computed(() => {
-    return store.state.answers;
-});
-
 
 
 const increaseQuestionNumber = () => {return store.dispatch("increaseQuestionNumber")};

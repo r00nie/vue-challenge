@@ -1,12 +1,5 @@
 <template>
   <div class="app">
-    <!-- <div>
-        <WelcomeComponent></WelcomeComponent>
-    </div>
-    <div>
-      <h1 class="title">{{title}}</h1>
-      <QuestionItem></QuestionItem>
-    </div> -->
     <router-view></router-view>  
   </div>
 </template>
