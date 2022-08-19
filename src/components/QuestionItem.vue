@@ -49,7 +49,7 @@ const setAnswer = (answer:boolean) => {return store.dispatch("setAnswer",{answer
 
 onMounted(() =>{
     store.dispatch("fetchQuestions");
-    
+    store.state.questionNumber = 0;
 });
 
 
@@ -101,6 +101,8 @@ const onClickSummary = () => {
         padding: 5px;
         order: 0;
         background-color: #1F487E;
+        flex-basis: 100%;
+        margin: 0 30% 0 30%;
     }
 
     .question-sentence{
@@ -217,5 +219,7 @@ const onClickSummary = () => {
         font-size: 40px;
         margin-bottom: 5vh;
   }
+
+  
 
 </style>
