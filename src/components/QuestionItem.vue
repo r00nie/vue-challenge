@@ -107,7 +107,7 @@ const onClickSummary = () => {
         box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
         width:35%;
         order: 1;
-        background-color: #49F743;
+        background-color: white;
         border: none;
         font-size: 20px;
         border-radius: 15px;
@@ -116,15 +116,16 @@ const onClickSummary = () => {
         cursor: pointer;
     }
 
-    .answer-button-true:hover{
-        background-color: #22c41c;
+    .answer-button-true:focus{
+        background-color: #61df5d;
     }
+
 
     .answer-button-false{
         box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
         order: 2;
         width: 35%;
-        background-color: #ED724C;
+        background-color: white;
         border: none;
         font-size: 20px;
         border-radius: 15px;
@@ -133,8 +134,8 @@ const onClickSummary = () => {
         cursor: pointer;
     }
 
-    .answer-button-false:hover{
-        background-color: #dc572e;
+    .answer-button-false:focus{
+        background-color: #ED724C;
     }
 
     .next-question-button{
